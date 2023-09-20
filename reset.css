@@ -1,16 +1,18 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
+  box-sizing: border-box;
   color-scheme: light dark;
   text-size-adjust: none;
 }
@@ -25,27 +27,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
   overflow-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1rem;
-  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
